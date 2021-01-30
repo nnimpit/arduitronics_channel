@@ -104,11 +104,6 @@ void setup() {
   Serial.println("Connected to wifi");
 
 }
-// <TR><TD>RH</TD><TD>
-// strokeme'>
-//Dew Point</TD><TD>
-
-//<td class='PRH'>&nbsp;
 
 void loop() {
  tft.fillScreen(ILI9341_BLACK);
@@ -140,38 +135,6 @@ void loop() {
  // delay(2000);
 }
 
-/*
-void draw_country_screen(String sCountry){
-  tft.fillScreen(ILI9341_BLACK);// clear screen
-
-  // headline
-  tft.setCursor(5,10);
-  tft.setTextColor(ILI9341_WHITE);
-  tft.setTextSize(3);
-  tft.print(sCountry + ":");
-
-  // infected
-  tft.setCursor(5,70);
-  tft.setTextColor(ILI9341_RED);
-  tft.print("Infected:");
-  tft.setCursor(190,70);
-  tft.print(infected);
-
-  // recovered
-  tft.setCursor(5,130);
-  tft.setTextColor(ILI9341_GREEN);
-  tft.print("Recovered:");
-  tft.setCursor(190,130);
-  tft.print(recovered);
-
-  // deaths
-  tft.setCursor(5,190);
-  tft.setTextColor(ILI9341_LIGHTGREY);
-  tft.print("Deaths:");
-  tft.setCursor(190,190);
-  tft.print(deaths);
-}
-*/
 
 void check_meteo(String readv, String sCountry, int row) {
   int err =0;
